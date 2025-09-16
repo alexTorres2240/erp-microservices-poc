@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: ventas
+          uri: http://localhost:8081
+          predicates:
+            - Path=/ventas/**
+        - id: inventario
+          uri: http://localhost:8082
+          predicates:
+            - Path=/inventario/**
+        - id: finanzas
+          uri: http://localhost:8083
+          predicates:
+            - Path=/finanzas/**
+server:
+  port: 8080
