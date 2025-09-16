@@ -1,13 +1,13 @@
-package com.erp.ventas.controller;
+package com.erp.finanzas.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class VentasController {
+public class FinanzasController {
 
     @GetMapping("/ventas")
-    public String listarVentas() {
-        return "Listado de ventas (ejemplo)";
+    public String listarFinanzas() {
+        return "Listado de finanzas (ejemplo)";
     }
 }
